@@ -5,6 +5,10 @@ This bash script was mainly written to manage different instances of neo4j on a 
 it available for people who find themselves in the same boat.  It doesn't require much, since it is written totally in 
 bash script.  Make sure you have wget, or curl installed and you should be all set.
 
+###INSTALLATION
+
+There are several ways to install this script. You can either clone this repository and symlink `neo4j-instance.sh` to somewhere in your path, or, if you don't want the whole repo, just run `curl -L https://raw.githubusercontent.com/tandrewnichols/neo4j-instance/master/neo4j-instance.sh > ~/bin/neo4j-instance && chmod +x ~/bin/neo4j-instance`.
+
 ###USAGE
 ```
   help                           outputs this document
@@ -29,3 +33,7 @@ bash script.  Make sure you have wget, or curl installed and you should be all s
 I have found some really useful plugins, that are created by a company called [GraphAware](www.graphaware.com).  I am 
 using about two of their plugins, but I am giving a full listing of what they offer.  I am using their TimeTree in 
 everything I do now.
+
+###MAC USAGE
+
+Mac is (notoriously) pinned to a previous (read: old) version of bash that doesn't support associative arrays, so a Mac-friendly version of this script that doesn't use them is also provided. Just use `neo4j-instance-mac.sh` instead of `neo4j-instance.sh`.
