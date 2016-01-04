@@ -7,10 +7,14 @@ bash script.  Make sure you have wget, or curl installed and you should be all s
 
 ###INSTALLATION
 
-There are several ways to install this script. You can either clone this repository and symlink `neo4j-instance.sh` to somewhere in your path, or, if you don't want the whole repo, just run `curl -L https://raw.githubusercontent.com/tandrewnichols/neo4j-instance/master/neo4j-instance.sh > ~/bin/neo4j-instance && chmod +x ~/bin/neo4j-instance`.
+There are several ways to install this script. You can either clone this repository and symlink `neo4j-instance.sh` to somewhere in your path, or, if you don't want the whole repo, just run
+
+```bash
+curl -L https://raw.githubusercontent.com/tandrewnichols/neo4j-instance/master/neo4j-instance.sh > ~/bin/neo4j-instance && chmod +x ~/bin/neo4j-instance
+```
 
 ###USAGE
-```
+```bash
   help                           outputs this document
   create [option]                create a new database instance
     options:
