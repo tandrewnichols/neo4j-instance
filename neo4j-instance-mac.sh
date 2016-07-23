@@ -338,9 +338,6 @@ function check {
     if [ "$1" == "start" ] && (portIsTaken "$2"); then
         message "database already started" "W" $red;
         return 1;
-    elif [ "$1" == "stop" ] && (! portIsTaken "$2") && [ -d "ports/$2" ]; then
-        message "database was already stopped" "W" $red;
-        return 1;
     elif [ ! -d "ports/$2" ]; then
         message "database was never created for that port" "W" $red;
         return 1;
